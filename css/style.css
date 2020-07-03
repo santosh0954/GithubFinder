@@ -118,11 +118,17 @@ nav .brand span {
   width: auto;
   max-width: 600px;
   padding: 30px;
-  margin: 50px auto;
+  margin: 50px 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid #efefef;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: 50px auto;
+  }
 }
 
 .container .input {
@@ -195,8 +201,58 @@ nav .brand span {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+footer {
+  bottom: 0;
+}
+
 footer p {
   text-align: center;
   color: #fff;
+}
+
+.alert {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 8px;
+  opacity: 1;
+  -webkit-animation: flip 1s;
+          animation: flip 1s;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  background-color: #ff7675;
+}
+
+.alert-success {
+  background-color: #55efc4;
+}
+
+@-webkit-keyframes flip {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip {
+  from {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

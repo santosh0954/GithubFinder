@@ -18,79 +18,17 @@
     <section class="input">
       <h1>Search Github User</h1>
       <p class="subheading">Enter username to fetch a user profile and repos</p>
-      <input type="text" id="userName">
+      <input type="text" id="searchUser" placeholder="Github Username....">
     </section>
     <!-- Input section end -->
-    <hr>
+
     <!--
       -- ─── OUTPUT ELEMENT ──────────────────────────────────────────────
       -->
 
       
     <div class="output">
-      <!-- profile section start -->
-      <section class="profile">
-        <div class="row">
-          <div class="col-4">
-            <img src="https://picsum.photos/200" alt="profile image" class="img">
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
-          <div class="col-8">
-            <span class="badge badge-primary">Public Repos: 4</span>
-            <span class="badge badge-secondary">Public Gist: 5</span>
-            <span class="badge badge-warning">Followers: 20</span>
-            <span class="badge badge-success">Following: 5</span>
-            <ul>
-              <li class="list">Company: abc</li>
-              <li class="list">Website: abc.com</li>
-              <li class="list">Location: varanasi</li>
-              <li class="list">Membership Since: </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- profile section end -->
-      <hr>
-      <!-- repos section start -->
-      <section class="repos">
-        <h2>Latest Repos:</h2>
-        <ul>
-          <li class="card">
-            <span>First</span> 
-            <span class="description">
-              <span class="badge badge-primary">Stars: 2</span>
-              <span class="badge badge-warning">Watchers: 0</span>
-              <span class="badge badge-success">Forks: 5</span>
-            </span>
-          </li>
-          <li class="card">
-            <span>Second</span> 
-            <span class="description">
-              <span class="badge badge-primary">Stars: 2</span>
-              <span class="badge badge-warning">Watchers: 0</span>
-              <span class="badge badge-success">Forks: 5</span>
-            </span>
-          </li>
-          <li class="card">
-            <span>Third</span> 
-            <span class="description">
-              <span class="badge badge-primary">Stars: 2</span>
-              <span class="badge badge-warning">Watchers: 0</span>
-              <span class="badge badge-success">Forks: 5</span>
-            </span>
-          </li>
-          <li class="card">
-            <span>Fourth</span> 
-            <span class="description">
-              <span class="badge badge-primary">Stars: 2</span>
-              <span class="badge badge-warning">Watchers: 0</span>
-              <span class="badge badge-success">Forks: 5</span>
-            </span>
-          </li>
-        </ul>
-
-      </section>
-      <!-- repos section end -->
+      
     </div>
     <!--
       -- ─── OUTPUT SECTION END ──────────────────────────────────────────
@@ -103,6 +41,8 @@
   <footer>
     <p class="lead">©Copyright Santosh Jha</p>
   </footer>
+  <script src="js/github.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
